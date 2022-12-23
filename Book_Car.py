@@ -74,4 +74,4 @@ time.sleep(2)
 OTP_button_locator = driver.find_element(By.CSS_SELECTOR, ".pb-2.h6")
 assert OTP_button_locator.is_displayed()
 
-print("Test completed successfully")
+print("Book Car test completed successfully")
