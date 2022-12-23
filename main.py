@@ -14,11 +14,12 @@ time.sleep(3)
 driver.get("https://clicktobuy.hyundai.co.in/#/bookACar")
 driver.maximize_window()
 time.sleep(2)
-#
+
 # select model
 model_selector = driver.find_element(By.CSS_SELECTOR, "option[value='ZZ']")
 model_selector.click()
 time.sleep(2)
+
 # select fuel type
 fuel_locator = driver.find_element(By.CSS_SELECTOR, "option[value='U']")
 fuel_locator.click()
@@ -61,7 +62,7 @@ time.sleep(2)
 
 # verify mobile number
 proceed_locator = driver.find_element(By.XPATH, "//input[@id='mobileNumber']")
-proceed_locator.send_keys("9884277203")
+proceed_locator.send_keys("9999999999")
 time.sleep(2)
 
 # click verify
