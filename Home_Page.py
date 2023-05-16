@@ -18,17 +18,17 @@ time.sleep(2)
 # Quote click
 quote_click_locator = driver.find_element(By.XPATH, "//button[normalize-space()='Get Quotation']")
 quote_click_locator.click()
-time.sleep(2)
+time.sleep(5)
 
 #  Select Car Type
 dropdown = Select(driver.find_element(By.XPATH, "//div/select"))
 dropdown.select_by_value("V")
-time.sleep(2)
+time.sleep(5)
 
 # Chose Car
 car_locator = driver.find_element(By.XPATH, "//div[contains(text(),'New Creta')]")
 car_locator.click()
-time.sleep(2)
+time.sleep(5)
 
 # Enter mobile number
 mobile_entry_locator = driver.find_element(By.XPATH, "//input[@id='mobileNumber']")
@@ -38,9 +38,9 @@ time.sleep(3)
 # Click verify button
 click_verify_locator = driver.find_element(By.XPATH, "//button[normalize-space()='Verify']")
 click_verify_locator.click()
-time.sleep(3)
+time.sleep(5)
 
-# Verify page is redirected to OTP page
+# To verify using Assert_Keyword
 OTP_button_locator = driver.find_element(By.CSS_SELECTOR, ".pb-2.h6")
 assert OTP_button_locator.is_displayed()
 
